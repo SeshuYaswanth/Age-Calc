@@ -1,0 +1,112 @@
+:root {
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+/* @font-face {
+    font-family: Pop;
+    src: url(/assets/fonts/Poppins-Regular.ttf);
+} */
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--Off-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    background-color: var(--White);
+    width: 420px;
+    max-width: 80%;
+    border-radius: 0 0 150px 0;
+    padding: 30px;
+    position: relative;
+    margin-bottom: 50px;
+}
+input {
+    width: 70px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--Off-white);
+    outline: none;
+}
+input:focus {
+    border: 2px solid var(--purple);
+}
+small {
+    color: var(--light-red);
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.input_container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.input_box {
+    display: flex;
+    border-bottom: 2px solid var(--Off-white);
+    margin-bottom: 20px;
+}
+.submit_button {
+    background-color: var(--purple);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 90px;
+    right: 30px;
+    padding: 20px;
+    cursor: pointer;
+}
+.submit_button:hover {
+    background-color: var(--Off-black);
+}
+.result h1 {
+    font-size: 60px;
+    font-weight: bolder;
+    font-style: italic;
+}
+.result span {
+    color: var(--purple);
+    margin-right: 20px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 768px) {
+    input {
+        width: 80%;
+    }
+    .output span {
+        font-size: 1.75rem;
+    }
+    .submit_button {
+        width: 40px;
+        height: 40px;
+        right: 45%;
+        top: 20%;
+    }
+    .submit_button img {
+        transform: scale(0.5);
+    }
+}

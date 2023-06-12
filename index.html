@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- start of container -->
+  <div class="container">
+    <!-- start of card -->
+    <div class="card">
+      <!-- start of input boxes -->
+      <div class="input_box">
+        <div class="input_container">
+          <span>Day</span>
+          <input type="number" id="day">
+          <small class="error_day"></small>
+        </div>
+        <div class="input_container">
+          <span>Month</span>
+          <input type="number" id="month">
+          <small class="error_month"></small>
+        </div>
+        <div class="input_container">
+          <span>Year</span>
+          <input type="number" id="year">
+          <small class="error_year"></small>
+        </div>
+      </div>
+      <!-- end of input boxes -->
+
+      <!-- submit_button -->
+      <button class="submit_button">
+        <img src="./assets/images/icon-arrow.svg" alt="arrow">
+      </button>
+      <!-- end of submit -->
+
+      <!-- start of output -->
+      <div class="result">
+        <h1><span class="output_year">--</span>year</h1>
+        <h1><span class="output_month">--</span>month</h1>
+        <h1><span class="output_day">--</span>day</h1>
+      </div>
+      <!-- end of output -->
+    </div>
+    <!-- end of card -->
+  </div>
+  <!-- end of container -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/SeshuYaswanth">Seshu Yaswanth</a>.
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
