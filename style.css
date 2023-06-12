@@ -100,7 +100,7 @@ small {
     input {
         width: 80%;
     }
-    .output span {
+    .result span {
         font-size: 1.75rem;
     }
     .submit_button {
