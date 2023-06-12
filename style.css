@@ -35,6 +35,9 @@ body {
     position: relative;
     margin-bottom: 50px;
 }
+.foramt {
+    font-size: 0.8rem;
+}
 input {
     width: 70px;
     padding: 10px;
